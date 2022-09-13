@@ -1,10 +1,10 @@
-const { Axios } = require("axios");
+const  axios = require("axios");
 
 const getProjectsByUsername = async (username) => {
   try {
-    const userResponse = await Axios.get("/api./user?username=${username}");
+    const userResponse = await axios.get("/api./user?username=${username}");
     const user = userResponse.data;
-    const projectsResponse = await Axios.get(
+    const projectsResponse = await axios.get(
       "/api_/user /${user. id}/projects"
     );
     return projectsResponse.data;
