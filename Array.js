@@ -38,6 +38,23 @@ console.log(animals4); // ["snick", "mouse", "dog", "cat", "horse", "cow", "pig"
 const animals5 = ["dog", "cat", "horse", "cow", "pig"];
 const elementlncluded = animals5.includes("dog");
 console.log(elementlncluded); // true
-//6. Find
-let date = new Date().toUTCString().slice(5, 16);
-console.log(date); // 02 Sep 2022
+
+
+// Techniques to manipulate JavaScript Arrays Like a Boss
+const menuOrder = [
+  { name: "Spaghetti", price: 18 },
+  { name: "Pizza", price: 8 },
+  { name: "Wine", price: 50 },
+];
+// How To Filter Objects In An Array Based On A Specific Condition
+const FilteredMenu = menuOrder.filter((item) => item.price < 9);
+console.log(FilteredMenu); // Output: ,k- [{ name: "Pizza", pr1ce: 8 }]
+// How To Get The Highest st Value In An Array  The most expensive item
+const mostExpensive = Math.max(...menuOrder.map((item) => item.price));
+console.log(mostExpensive); // Output: , k - S©
+// The cheapest item
+const cheapest = Math.min(...menuOrder.map((item) => item.price));
+console.log(cheapest); // Output: .k- 8
+// how To Use Reduce Over An Array Of Objects Computing the total amount of the order
+const totalPrice = menuOrder.reduce((acc, item) => acc + item.price, 0);
+console.log(totalPrice); // Output: ,.- 68
