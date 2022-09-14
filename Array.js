@@ -39,6 +39,12 @@ const animals5 = ["dog", "cat", "horse", "cow", "pig"];
 const elementlncluded = animals5.includes("dog");
 console.log(elementlncluded); // true
 
+// How to remove duplicate elements from Array
+
+const arr = ["dog", "cat", "horse", "cow", "horse", "cow", "pig", "dog"];
+
+const removeDuplicates = Array.from(new Set(arr));
+console.log(" No duplicated: ", removeDuplicates);
 
 // Techniques to manipulate JavaScript Arrays Like a Boss
 const menuOrder = [
