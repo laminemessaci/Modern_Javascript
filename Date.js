@@ -12,7 +12,7 @@ console.log(date1);
 
 let date3 = new Date().toUTCString().slice(5, 16);
 console.log(date3);
-// 09 Ju11 2022
+// 09 Jull 2022
 
 let date4 = new Date().toLocaleDateString('fr');
 console.log(date4);
